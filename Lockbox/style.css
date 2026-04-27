@@ -1,0 +1,94 @@
+body {
+  background: #111;
+  color: red;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  transition: filter 0.2s ease;
+}
+
+#question {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#lock-container img {
+  width: 80px;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+#slots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slot button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.flower {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+}
+
+#enter {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+#enter.correct {
+  background: green;
+}
+
+#enter.wrong {
+  background: red;
+}
+
+.hidden {
+  display: none;
+}
+
+#audioButton {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  user-select: none;
+  transition: transform 0.1s ease;
+}
+
+#audioButton:active {
+  transform: scale(0.9);
+}
